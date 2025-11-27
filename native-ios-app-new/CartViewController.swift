@@ -1,33 +1,101 @@
 import UIKit
+import React
+import ModuleCartFramework
 
 class CartViewController: UIViewController {
     
+    var reactRootView: RCTRootView?
+    var bridge: RCTBridge?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        title = "RN Cart"
+        loadCartModule()
     }
     
-    private func setupUI() {
-        title = "RN Carts"
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    private func loadCartModule() {
+        print("🔍 Starting Cart module load...")
+        
+        // Use SPM package's API to get bundle URL
+        // SPM packages are linked statically, not as separate framework bundles
+        guard let bundleURL = ModuleCartFramework.shared.getBundleURL() else {
+            print("❌ Failed to get bundle URL from ModuleCartFramework")
+            print("   Checking available bundles in main bundle...")
+            if let bundlePath = Bundle.main.path(forResource: "module-cart", ofType: "bundle") {
+                print("   ✅ Found bundle in main bundle: \(bundlePath)")
+            } else {
+                print("   ❌ Bundle not found in main bundle either")
+            }
+            setupFallbackView()
+            return
+        }
+        
+        print("✅ Bundle URL: \(bundleURL.path)")
+        
+        let moduleName = ModuleCartFramework.shared.getModuleName()
+        
+        print("📦 Loading Cart module")
+        print("   JS Bundle URL: \(bundleURL.path)")
+        print("   Module Name: \(moduleName)")
+        
+        // Create bridge
+        let bridge = RCTBridge(bundleURL: bundleURL, moduleProvider: nil, launchOptions: nil)
+        
+        guard let bridge = bridge else {
+            print("❌ Failed to create React Native bridge")
+            setupFallbackView()
+            return
+        }
+        
+        self.bridge = bridge
+        print("✅ React Native bridge created")
+        
+        // Create root view
+        let rootView = RCTRootView(
+            bridge: bridge,
+            moduleName: moduleName,
+            initialProperties: nil
+        )
+        
+        rootView.backgroundColor = .systemBackground
+        rootView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(rootView)
+        self.reactRootView = rootView
+        
+        NSLayoutConstraint.activate([
+            rootView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            rootView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            rootView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            rootView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+        
+        print("✅ Root view added to hierarchy")
+    }
+    
+    private func setupFallbackView() {
         view.backgroundColor = .systemBackground
         
-        
         let label = UILabel()
-        label.text = "React Native Cart Module\n(Will be integrated later)"
-        label.font = .systemFont(ofSize: 20, weight: .medium)
+        label.text = "Failed to load Cart Module. Check logs."
         label.textAlignment = .center
-        label.numberOfLines = 0
-        label.textColor = .secondaryLabel
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         view.addSubview(label)
         
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+    
+    deinit {
+        reactRootView?.removeFromSuperview()
+        reactRootView = nil
+        bridge?.invalidate()
+        bridge = nil
     }
 }
