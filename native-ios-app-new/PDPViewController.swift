@@ -1,6 +1,6 @@
 import UIKit
 import React
-import ModulePDPFramework
+import MKDRNModulePdpSPM
 
 class PDPViewController: UIViewController {
     

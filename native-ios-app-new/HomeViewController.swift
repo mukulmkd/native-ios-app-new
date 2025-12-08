@@ -126,5 +126,5 @@ private struct CardInfo {
 }
 
 private struct AssociatedKeys {
-    static var viewController = "viewController"
+    static var viewController: UInt8 = 0
 }
