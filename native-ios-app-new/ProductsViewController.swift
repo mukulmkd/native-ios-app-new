@@ -1,6 +1,6 @@
 import UIKit
 import React
-import MKDRNModuleProductsSPM
+import VSCORNModuleProductsSPM
 
 class ProductsViewController: UIViewController {
     

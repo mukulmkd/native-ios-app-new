@@ -1,6 +1,6 @@
 import UIKit
 import React
-import MKDRNModuleCartSPM
+import VSCORNModuleCartSPM
 
 class CartViewController: UIViewController {
     

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A9750EA2EE7173500825291 /* MKDReactNativeRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9750E92EE7173500825291 /* MKDReactNativeRuntime */; };
-		1A9750EC2EE7173500825291 /* React in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9750EB2EE7173500825291 /* React */; };
-		1A9750EF2EE7174700825291 /* MKDRNModuleCartSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9750EE2EE7174700825291 /* MKDRNModuleCartSPM */; };
-		1A9750F22EE7175900825291 /* MKDRNModulePdpSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9750F12EE7175900825291 /* MKDRNModulePdpSPM */; };
-		1A9750F52EE7176700825291 /* MKDRNModuleProductsSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A9750F42EE7176700825291 /* MKDRNModuleProductsSPM */; };
+		1A2EFBC72EE9EE36004A8714 /* React in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2EFBC62EE9EE36004A8714 /* React */; };
+		1A2EFBC92EE9EE36004A8714 /* VSCOReactNativeRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2EFBC82EE9EE36004A8714 /* VSCOReactNativeRuntime */; };
+		1A2EFBD32EE9EE4A004A8714 /* VSCORNModuleProductsSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2EFBD22EE9EE4A004A8714 /* VSCORNModuleProductsSPM */; };
+		1A2EFBD62EE9EE57004A8714 /* VSCORNModuleCartSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2EFBD52EE9EE57004A8714 /* VSCORNModuleCartSPM */; };
+		1A2EFBD92EE9EE60004A8714 /* VSCORNModulePdpSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2EFBD82EE9EE60004A8714 /* VSCORNModulePdpSPM */; };
+		1A71FCA52EF3FC4300AAF1AE /* React in Frameworks */ = {isa = PBXBuildFile; productRef = 1A71FCA42EF3FC4300AAF1AE /* React */; };
+		1A71FCA72EF3FC4300AAF1AE /* VSCOReactNativeRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 1A71FCA62EF3FC4300AAF1AE /* VSCOReactNativeRuntime */; };
 		6E1C70141D4D48E292B31D5A017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C70141D4D48E292B31D5A002 /* AppDelegate.swift */; };
 		6E1C70141D4D48E292B31D5A018 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C70141D4D48E292B31D5A004 /* HomeViewController.swift */; };
 		6E1C70141D4D48E292B31D5A019 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C70141D4D48E292B31D5A006 /* ProfileViewController.swift */; };
@@ -38,11 +40,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9750EA2EE7173500825291 /* MKDReactNativeRuntime in Frameworks */,
-				1A9750EC2EE7173500825291 /* React in Frameworks */,
-				1A9750EF2EE7174700825291 /* MKDRNModuleCartSPM in Frameworks */,
-				1A9750F22EE7175900825291 /* MKDRNModulePdpSPM in Frameworks */,
-				1A9750F52EE7176700825291 /* MKDRNModuleProductsSPM in Frameworks */,
+				1A71FCA72EF3FC4300AAF1AE /* VSCOReactNativeRuntime in Frameworks */,
+				1A71FCA52EF3FC4300AAF1AE /* React in Frameworks */,
+				1A2EFBD32EE9EE4A004A8714 /* VSCORNModuleProductsSPM in Frameworks */,
+				1A2EFBC72EE9EE36004A8714 /* React in Frameworks */,
+				1A2EFBC92EE9EE36004A8714 /* VSCOReactNativeRuntime in Frameworks */,
+				1A2EFBD62EE9EE57004A8714 /* VSCORNModuleCartSPM in Frameworks */,
+				1A2EFBD92EE9EE60004A8714 /* VSCORNModulePdpSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,11 +109,13 @@
 			);
 			name = "native-ios-app-new";
 			packageProductDependencies = (
-				1A9750E92EE7173500825291 /* MKDReactNativeRuntime */,
-				1A9750EB2EE7173500825291 /* React */,
-				1A9750EE2EE7174700825291 /* MKDRNModuleCartSPM */,
-				1A9750F12EE7175900825291 /* MKDRNModulePdpSPM */,
-				1A9750F42EE7176700825291 /* MKDRNModuleProductsSPM */,
+				1A2EFBC62EE9EE36004A8714 /* React */,
+				1A2EFBC82EE9EE36004A8714 /* VSCOReactNativeRuntime */,
+				1A2EFBD22EE9EE4A004A8714 /* VSCORNModuleProductsSPM */,
+				1A2EFBD52EE9EE57004A8714 /* VSCORNModuleCartSPM */,
+				1A2EFBD82EE9EE60004A8714 /* VSCORNModulePdpSPM */,
+				1A71FCA42EF3FC4300AAF1AE /* React */,
+				1A71FCA62EF3FC4300AAF1AE /* VSCOReactNativeRuntime */,
 			);
 			productName = "native-ios-app-new";
 			productReference = 6E1C70141D4D48E292B31D5A015 /* native-ios-app-new.app */;
@@ -133,12 +139,13 @@
 				Base,
 			);
 			mainGroup = 0B6505961F6A41BFBA160C5F003;
-			packageReferences = (
-				1A9750E82EE7173500825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDReactNativeRuntime" */,
-				1A9750ED2EE7174700825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleCartSPM" */,
-				1A9750F02EE7175900825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModulePdpSPM" */,
-				1A9750F32EE7176700825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleProductsSPM" */,
-			);
+		packageReferences = (
+			1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */,
+			1A2EFBCA2EE9EE3E004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/vsco-native-kit/ios/VSCONativeKit" */,
+			1A2EFBD12EE9EE4A004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleProductsSPM" */,
+			1A2EFBD42EE9EE57004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleCartSPM" */,
+			1A2EFBD72EE9EE60004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModulePdpSPM" */,
+		);
 			productRefGroup = 0B6505961F6A41BFBA160C5F001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,44 +295,63 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		1A9750E82EE7173500825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDReactNativeRuntime" */ = {
+		1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDReactNativeRuntime";
+			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime";
 		};
-		1A9750ED2EE7174700825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleCartSPM" */ = {
+		1A2EFBCA2EE9EE3E004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/vsco-native-kit/ios/VSCONativeKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleCartSPM";
+			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/vsco-native-kit/ios/VSCONativeKit";
 		};
-		1A9750F02EE7175900825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModulePdpSPM" */ = {
+		1A2EFBD12EE9EE4A004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleProductsSPM" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModulePdpSPM";
+			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleProductsSPM";
 		};
-		1A9750F32EE7176700825291 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleProductsSPM" */ = {
+		1A2EFBD42EE9EE57004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleCartSPM" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/MKDRNModuleProductsSPM";
+			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleCartSPM";
+		};
+		1A2EFBD72EE9EE60004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModulePdpSPM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModulePdpSPM";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1A9750E92EE7173500825291 /* MKDReactNativeRuntime */ = {
+		1A2EFBC62EE9EE36004A8714 /* React */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MKDReactNativeRuntime;
-		};
-		1A9750EB2EE7173500825291 /* React */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = 1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */;
 			productName = React;
 		};
-		1A9750EE2EE7174700825291 /* MKDRNModuleCartSPM */ = {
+		1A2EFBC82EE9EE36004A8714 /* VSCOReactNativeRuntime */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MKDRNModuleCartSPM;
+			package = 1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */;
+			productName = VSCOReactNativeRuntime;
 		};
-		1A9750F12EE7175900825291 /* MKDRNModulePdpSPM */ = {
+		1A2EFBD22EE9EE4A004A8714 /* VSCORNModuleProductsSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MKDRNModulePdpSPM;
+			package = 1A2EFBD12EE9EE4A004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleProductsSPM" */;
+			productName = VSCORNModuleProductsSPM;
 		};
-		1A9750F42EE7176700825291 /* MKDRNModuleProductsSPM */ = {
+		1A2EFBD52EE9EE57004A8714 /* VSCORNModuleCartSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MKDRNModuleProductsSPM;
+			package = 1A2EFBD42EE9EE57004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModuleCartSPM" */;
+			productName = VSCORNModuleCartSPM;
+		};
+		1A2EFBD82EE9EE60004A8714 /* VSCORNModulePdpSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A2EFBD72EE9EE60004A8714 /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCORNModulePdpSPM" */;
+			productName = VSCORNModulePdpSPM;
+		};
+		1A71FCA42EF3FC4300AAF1AE /* React */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */;
+			productName = React;
+		};
+		1A71FCA62EF3FC4300AAF1AE /* VSCOReactNativeRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A71FCA32EF3FC4300AAF1AE /* XCLocalSwiftPackageReference "../Projects/monorepo-expo-rn-ssr-csr/frameworks/ios/VSCOReactNativeRuntime" */;
+			productName = VSCOReactNativeRuntime;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
